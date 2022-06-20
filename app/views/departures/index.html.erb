@@ -1,7 +1,7 @@
 <div class="p-5 uppercase">
   <!-- Departure Station -->
   <div class="stations">
-    <p class="space-x-1 text-4xl"><% @stations.each do |station| %>
+    <p class="flex text-4xl gap-x-3"><% @stations.each do |station| %>
         <%= link_to station.name, station_departures_path(station.slug), class: (station.slug == params[:station_id]? "text-red-700 dark:text-red-500" : "") %>
       <% end %>
     </p>
