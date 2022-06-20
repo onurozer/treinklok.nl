@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application" %>
+    <meta name="description" content="Trains you can actually catch">
+    <meta property="og:title" content="TREIN:KLOK" />
+    <meta property="og:description" content="Trains you can actually catch." />
+    <meta property="og:image" content="<%= image_path 'treinklok-og.jpeg' %>" />
+    <link rel="stylesheet" href="https://use.typekit.net/ijv8rax.css">
   </head>
-
   <body>
     <%= yield %>
   </body>
